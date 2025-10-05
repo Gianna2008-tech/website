@@ -1,0 +1,138 @@
+/* --- Global Styles --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #d4f3ff, #fbeeff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* --- Header --- */
+header {
+  background: linear-gradient(90deg, #ff6a00, #ffb347);
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* --- Navigation --- */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #222;
+  text-shadow: 0 0 5px #fff;
+  transform: scale(1.1);
+}
+
+/* --- Banner Image --- */
+.banner {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-bottom: 5px solid #ff6a00;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* --- Sections --- */
+section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+section h2 {
+  color: #ff6a00;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+/* --- Menu & Team Layout --- */
+.menu, .team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* --- Food & Member Cards --- */
+.food, .member {
+  background: #fff;
+  border-radius: 18px;
+  width: 230px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food:hover, .member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.food img, .member img {
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.food h3, .member h3 {
+  color: #ff6a00;
+  margin-bottom: 5px;
+}
+
+.food p {
+  font-weight: 600;
+  color: #333;
+}
+
+/* --- Footer --- */
+footer {
+  background: linear-gradient(90deg, #333, #444);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+footer b {
+  color: #ffb347;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(1.05); }
+  to { opacity: 1; transform: scale(1); }
+}
+
